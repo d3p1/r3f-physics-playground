@@ -30,12 +30,20 @@ export const Box: React.FC<
   }
 
   const handleClick = () => {
+    if (rigidBodyType !== 'dynamic') {
+      return
+    }
+
     rigidBodyRef.current.applyImpulse(
-      vec3({x: Math.random(), y: 4, z: Math.random()}),
+      vec3({x: Math.random() - 0.5, y: 4, z: Math.random() - 0.5}),
       true,
     )
     rigidBodyRef.current.applyTorqueImpulse(
-      vec3({x: Math.random(), y: Math.random(), z: Math.random()}),
+      vec3({
+        x: Math.random() - 0.5,
+        y: Math.random() - 0.5,
+        z: Math.random() - 0.5,
+      }),
       true,
     )
   }
