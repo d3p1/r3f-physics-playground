@@ -1,3 +1,13 @@
+# [1.2.0](https://github.com/d3p1/r3f-physics-playground/compare/v1.1.0...v1.2.0) (2025-09-02)
+
+
+### Features
+
+* add perf panel [[#1](https://github.com/d3p1/r3f-physics-playground/issues/1)] ([dbec716](https://github.com/d3p1/r3f-physics-playground/commit/dbec7165d467635b8a2a3f7875e383d20ae927a3))
+* add physics to instanced mesh [[#1](https://github.com/d3p1/r3f-physics-playground/issues/1)] ([f2ce842](https://github.com/d3p1/r3f-physics-playground/commit/f2ce842997a94b1e47e1447ce0c80016b6f74d56))
+* improve jump animation [[#1](https://github.com/d3p1/r3f-physics-playground/issues/1)] ([c9976d6](https://github.com/d3p1/r3f-physics-playground/commit/c9976d6b5818c8c8255c79721f7343e57e79a146))
+* init instanced mesh [[#1](https://github.com/d3p1/r3f-physics-playground/issues/1)] ([2093749](https://github.com/d3p1/r3f-physics-playground/commit/2093749d710ad870f8df1a3c22dced12b0b2bdaf))
+
 # [1.1.0](https://github.com/d3p1/r3f-physics-playground/compare/v1.0.0...v1.1.0) (2025-08-31)
 
 
