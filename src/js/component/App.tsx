@@ -5,12 +5,15 @@
 import {OrbitControls, SoftShadows} from '@react-three/drei'
 import {Canvas} from '@react-three/fiber'
 import {CuboidCollider, Physics, RigidBody} from '@react-three/rapier'
+import {Perf} from 'r3f-perf'
 import {Box} from './app/Box.tsx'
 import {InstancedMesh} from './app/InstancedMesh.tsx'
 
 export const App = () => {
   return (
     <Canvas camera={{fov: 35, position: [4, 1, 8]}} shadows={true}>
+      <Perf position="top-left" />
+
       <SoftShadows />
 
       <OrbitControls minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
