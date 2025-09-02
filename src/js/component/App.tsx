@@ -6,6 +6,7 @@ import {OrbitControls, SoftShadows} from '@react-three/drei'
 import {Canvas} from '@react-three/fiber'
 import {CuboidCollider, Physics, RigidBody} from '@react-three/rapier'
 import {Box} from './app/Box.tsx'
+import {InstancedMesh} from './app/InstancedMesh.tsx'
 
 export const App = () => {
   return (
@@ -26,6 +27,9 @@ export const App = () => {
           position={[0, -0.05, 0]}
           receiveShadow={true}
         />
+
+        <InstancedMesh />
+
         <RigidBody type="fixed" colliders={false}>
           <CuboidCollider args={[1, 2, 7.5]} position={[8.5, 2, 0]} />
           <CuboidCollider args={[1, 2, 7.5]} position={[-8.5, 2, 0]} />
