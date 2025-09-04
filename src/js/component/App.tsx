@@ -8,6 +8,7 @@ import {CuboidCollider, Physics, RigidBody} from '@react-three/rapier'
 import {Perf} from 'r3f-perf'
 import {Box} from './app/Box.tsx'
 import {InstancedMesh} from './app/InstancedMesh.tsx'
+import {Stick} from './app/Stick.tsx'
 
 export const App = () => {
   return (
@@ -32,6 +33,8 @@ export const App = () => {
         />
 
         <InstancedMesh />
+
+        <Stick />
 
         <RigidBody type="fixed" colliders={false}>
           <CuboidCollider args={[1, 2, 7.5]} position={[8.5, 2, 0]} />
