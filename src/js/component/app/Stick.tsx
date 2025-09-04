@@ -26,7 +26,7 @@ export const Stick = () => {
 
   return (
     <RigidBody ref={rigidBodyRef} type="kinematicPosition">
-      <mesh scale={[6, 1, 1]}>
+      <mesh scale={[6, 1, 1]} castShadow={true}>
         <boxGeometry />
         <meshNormalMaterial />
       </mesh>
