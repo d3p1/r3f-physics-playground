@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/d3p1/r3f-physics-playground/compare/v1.2.0...v1.3.0) (2025-09-04)
+
+
+### Bug Fixes
+
+* add shadow to stick [[#1](https://github.com/d3p1/r3f-physics-playground/issues/1)] ([bea9ca0](https://github.com/d3p1/r3f-physics-playground/commit/bea9ca02f2899f9cceaacdad38e7a0d770ad2c69))
+
+
+### Features
+
+* add collision enter audio to instanced mesh [[#1](https://github.com/d3p1/r3f-physics-playground/issues/1)] ([e3d818f](https://github.com/d3p1/r3f-physics-playground/commit/e3d818f0531f55916e5f6e620c0f5afe45491cc3))
+* add stick [[#1](https://github.com/d3p1/r3f-physics-playground/issues/1)] ([77851d5](https://github.com/d3p1/r3f-physics-playground/commit/77851d53650127289eabe8d9bbbc3acfd5aa6626))
+
 # [1.2.0](https://github.com/d3p1/r3f-physics-playground/compare/v1.1.0...v1.2.0) (2025-09-02)
 
 
