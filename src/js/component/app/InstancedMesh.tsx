@@ -3,7 +3,7 @@
  * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
 import {InstancedRigidBodies} from '@react-three/rapier'
-import {useMemo} from 'react'
+import {useMemo, useRef} from 'react'
 
 export const InstancedMesh = () => {
   const count = 50
@@ -30,9 +30,21 @@ export const InstancedMesh = () => {
 
     return instances
   }, [])
+  const hitAudioRef = useRef(
+    new Audio('/r3f-physics-playground/audios/hit.mp3'),
+  )
+
+  const handleOnCollisionEnter = () => {
+    hitAudioRef.current.currentTime = 0
+    hitAudioRef.current.volume = Math.random()
+    hitAudioRef.current.play().catch((error) => console.error(error))
+  }
 
   return (
-    <InstancedRigidBodies instances={instances}>
+    <InstancedRigidBodies
+      instances={instances}
+      onCollisionEnter={handleOnCollisionEnter}
+    >
       <instancedMesh args={[undefined, undefined, count]} castShadow={true}>
         <boxGeometry />
         <meshStandardMaterial color="tomato" />
